@@ -3,23 +3,25 @@
     <head>
         <title>"YES Mali-Photos</title>
          <link rel="stylesheet" type="text/css" href="style.css">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.2/simple-lightbox.min.css" />
     </head>
     <body>
         <header>
              <img src="https://codehs.com/uploads/cac99a3dffcb1c493d7950a3459e27e5">
                <h1> YES Mali: Photos! </h1>
+               <h3>Click on me!</h3>
          <nav>
                <ul class="nav-list">
                   <li class="nav-item">
-                      <a href="index.html" class="nav-link">Home</a> </li>
+                      <a href="index.html" class="nav-link active">Home</a> </li>
                   <li class="nav-item">
-                      <a href="remerciements.html" class="nav-link">Remerciements</a>
+                      <a href="remerciements.html" class="nav-link active">Remerciements</a>
                   </li>
                   <li class="nav-item">
-                      <a href="contact.html" class="nav-link">Contact</a>
+                      <a href="contact.html" class="nav-link active">Contact</a>
                   </li>
                  <li class="nav-item">
-                      <a href="join.html" class="nav-link">Join Us </a>
+                      <a href="join.html" class="nav-link active">Join Us </a>
                  </li>
                     </ul>
 
@@ -28,43 +30,48 @@
         <section id="events">
             <h2>Events</h2>
             <div class="photo-grid">
-              <img src="Images/event1.jpeg" alt="Event 1">
-              <img src="Images/event2.jpeg" alt="Event 2">
-              <img src="Images/event3.jpeg" alt="Event 3">
-              <img src="Images/event4.jpeg" alt="Event 4">
+              <a href="Images/event1.jpeg"><img src="Images/event1.jpeg" alt="Event 1"></a>
+               <a href="Images/event2.jpeg"><img src="Images/event2.jpeg" alt="Event 2"></a>
+              <a href="Images/event3.jpeg"><img src="Images/event3.jpeg" alt="Event 3"></a>
+             <a href="Images/event4.jpeg"><img src="Images/event4.jpeg" alt="Event 4"></a>
+    
             </div>  
 
         </section> 
         <section id="host-family">
             <h2>Host Family</h2>
             <div class="photo-grid">
-                <img src="Images/host fam1.jpeg" alt="Host Family 1">
-                <img src="Images/host fam2.jpeg" alt="Host Family 2">
-                <img src="Images/host fam4.jpeg" alt="Host Family 4">
-                <img src="Images/host fam5.jpeg" alt="Host Family 5">
+                <a href="Images/host fam1.jpeg"><img src="Images/host fam1.jpeg" alt="Host Family 1"></a>
+                <a href="Images/host fam2.jpeg"><img src="Images/host fam2.jpeg" alt="Host Family 2"></a>
+                <a href="Images/host fam4.jpeg"><img src="Images/host fam4.jpeg" alt="Host Family 4"></a>
+                <a href="Images/host fam5.jpeg"><img src="Images/host fam5.jpeg" alt="Host Family 5"></a>
             </div>
         </section>
         <section id="fun-moments">
             <h2>Fun Moments</h2>
             <div class="photo-grid">
-                <img src="Images/fun mom1.jpeg" alt="Fun Moment 1">
-                <img src="Images/fun mom2.jpeg" alt="Fun Moment 2">
-                <img src="Images/fun mom3.jpeg" alt="Fun Moment 3">
-                <img src="Images/fun mom4.jpeg" alt="Fun Moment 4">
+                <a href="Images/fun mom1.jpeg"><img src="Images/fun mom1.jpeg" alt="Fun Moment 1"></a>
+                <a href="Images/fun mom2.jpeg"><img src="Images/fun mom2.jpeg" alt="Fun Moment 2"></a>
+                <a href="Images/fun mom3.jpeg"><img src="Images/fun mom3.jpeg" alt="Fun Moment 3"></a>
+                <a href="Images/fun mom4.jpeg"><img src="Images/fun mom4.jpeg" alt="Fun Moment 4"></a>
             </div>
         </section>
         <section id="Alumni">
             <h2>Alumni Activities</h2>
-            <div class="photo-grid">
-                <img src="Images/alumni1.jpeg" alt="Alumni Activity 1">
-                <img src="Images/Alumni2.jpeg" alt="Alumni Activity 2">
-                <img src="Images/Alumni3.jpeg" alt="Alumni Activity 3">
-                <img src="Images/alumni4.jpeg" alt="Alumni Activity 4">
-                <img src="Images/alumni5.jpeg" alt="Alumni Activity 5">
+            <div class="photo-grid"> 
+                <a href="Images/alumni1.jpeg"><img src="Images/alumni1.jpeg" alt="Alumni Activity 1"></a>
+                <a href="Images/Alumni2.jpeg"><img src="Images/Alumni2.jpeg" alt="Alumni Activity 2"></a>
+                <a href="Images/Alumni3.jpeg"><img src="Images/Alumni3.jpeg" alt="Alumni Activity 3"></a>
+                <a href="Images/alumni4.jpeg"><img src="Images/alumni4.jpeg" alt="Alumni Activity 4"></a>
+                <a href="Images/alumni5.jpeg"><img src="Images/alumni5.jpeg" alt="Alumni Activity 5"></a>
             </div>
         </section>
          <footer class="footer">
-                 <p><h6><i>We are the future leaders of Mali and the world.</i></h6></p>
+         <div class="footer-flags">
+                <img src="https://flagcdn.com/w40/ml.png" alt="Mali Flag" class="flag">
+                <img src="https://flagcdn.com/w40/us.png" alt="United States Flag" class="flag">
+          </div>
+             <p><h6><i>We are the future leaders of Mali and the world.</i></h6></p>
              <p><h6><i>We are the YES Alumni of Mali.</i></h6></p>
              <p><h6><i>We are the YES Program.</i></h6></p>
              <p><h6><i>&copy; 2024/2025 YES Program "Mali"</i>
@@ -74,5 +81,9 @@
              </p>
                      
              </footer>
+             <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.2/simple-lightbox.min.js"></script>
+             <script>
+                new SimpleLightbox('.photo-grid a');
+             </script>
     </body>
 </html>
